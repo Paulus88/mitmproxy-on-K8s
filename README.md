@@ -5,12 +5,13 @@ https://hub.docker.com/r/mitmproxy/mitmproxy
 As I was unable to find this I decided to create my own manifest and share it with everyone.
 
 Simply does the same as instructed on Docker Hub but as a Kubernetes Deployment manifest.
+
 The manifest simply deploys the latest DEV version of mitmproxy and mitmweb directly to the your host network and listens on *. mitmproxy normally will run on port 8080 and mitmweb 8081.
 ## Deployment
 ```
 kubectl apply -f https://raw.githubusercontent.com/Paulus88/mitmproxy-on-K8s/main/mitmproxy.yml
 ```
-## Additional features you could consider.
+## Additional features you could consider
 Changing the arguments to run mitmdump, or change any settings:
 ```
       - args:
