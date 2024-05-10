@@ -20,6 +20,7 @@ Changing the arguments to run mitmdump, or change any settings:
         - "*"
         - --no-web-open-browser
 ```
+Manifest includes readinessProbe and livenessProbe that monitors mitmweb port 8081, keep this in mind if your changing settings.
 
 I recommend adding a persisted volume for the CA certificate, as mentioned on Docker Hub. Mount: /home/mitmproxy/.mitmproxy
 
