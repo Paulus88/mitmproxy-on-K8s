@@ -41,7 +41,7 @@ spec:
          periodSeconds: 120
          successThreshold: 1
          tcpSocket:
-          port: 8081
+          port: 8080
          timeoutSeconds: 1
         name: mitmproxy
         stdin: true
