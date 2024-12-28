@@ -50,8 +50,6 @@ spec:
         terminationMessagePolicy: File
       dnsPolicy: Default
       hostNetwork: true
-      imagePullSecrets:
-        - name: registry-1
       restartPolicy: Always
       schedulerName: default-scheduler
       terminationGracePeriodSeconds: 30
